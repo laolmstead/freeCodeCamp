@@ -22,7 +22,7 @@ Any memory allocated during the program's execution will need to be freed before
 ```C
 free( arrayPtr );
 ```
-This statement will deallocate the memory previously allocated. C does not come with a `garbage collector` like some other languages, such as Java. As a result, memory not properly freed will continue to be allocated after the program is closed.
+This statement will deallocate the memory previously allocated. C does not come with a `garbage collector` like some other languages, such as Java. As a result, memory not properly freed will continue to be allocated after the program is closed. Failure to free memory will result in a memory leak which will impair the performance of a program or cause it fail.
 
 # Before you go on...
 ## A Review
